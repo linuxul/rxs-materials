@@ -61,4 +61,9 @@ example(of: "Single") {
             }
         }
         .disposed(by: disposeBag)
+
+
 }
+
+
+print("End")

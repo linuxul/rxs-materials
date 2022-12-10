@@ -7,6 +7,6 @@ target 'RxPlayground' do
 
   # Pods for RxPlayground
   pod 'RxSwift'
-
+  pod 'RxRelay'
 
 end
