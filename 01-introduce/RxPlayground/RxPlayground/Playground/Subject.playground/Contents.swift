@@ -149,11 +149,9 @@ example(of: "ReplaceSubject") {
 
 }
 
-// Relay는 onNext 대신 accept를 사용한다. Error 이벤트를 추가 할 수 없다.
+// Relay는 onNext 대신 accept를 사용한다. Error 이벤트를 추가 할 수 없다. 종료를 하지 않는다.
 example(of: "PublishRelay") {
 
-
-    
     // 1
     let relay = PublishRelay<String>()
     let disposeBag = DisposeBag()
@@ -161,19 +159,56 @@ example(of: "PublishRelay") {
     relay.accept("Knock knock, anyone home?")
 
     relay
-        .subscribe(
-            onNext: { event in
-                print("event = \(event)")
-            },
-            onCompleted: {
-               print("onCompleted")
-            }
-        )
+        .subscribe(onNext: {
+            print($0)
+        })
         .disposed(by: disposeBag)
 
     relay.accept("1")
+    relay.accept("2")
+    relay.accept("3")
+    relay.accept("4")
+//    relay.accept(MyError.anError)
+//    relay.onCompleted()
 
 }
+
+
+example(of: "BehaviorRelay") {
+
+    // 1
+    let relay = BehaviorRelay(value: "Initial value")
+    let disposeBag = DisposeBag()
+
+    // 2
+    relay.accept("New Initial value")
+
+    // 3
+    relay
+        .subscribe {
+            print(label: "1)", event: $0)
+        }
+        .disposed(by: disposeBag)
+
+    relay.accept("1")
+    relay.accept("2")
+
+    relay
+        .subscribe {
+            print(label: "2)", event: $0)
+        }
+        .disposed(by: disposeBag)
+
+    relay.accept("3")
+
+    print("relay.value = \(relay.value)")
+
+//    relay.value = "relay.value"
+
+
+
+}
+
 
 
 
