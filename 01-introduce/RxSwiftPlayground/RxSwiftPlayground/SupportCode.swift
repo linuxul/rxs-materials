@@ -10,16 +10,16 @@ import RxSwift
 import RxRelay
 
 // 1
-public enum MyError: Error {
+enum MyError: Error {
     case anError
 }
 
 // 2
-public func print<T: CustomStringConvertible>(label: String, event: Event<T>) {
+func print<T: CustomStringConvertible>(label: String, event: Event<T>) {
     print(label, (event.element ?? event.error) ?? event)
 }
 
-public func example(of description: String, action: () -> Void) {
+func example(of description: String, action: () -> Void) {
     print("\n --- Example of: \(description) ---")
     action()
 }
