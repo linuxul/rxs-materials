@@ -35,6 +35,7 @@
 		E1C0D0CB2945340700F6185B /* FilterOperators.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = FilterOperators.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		E1C0D0CC294579A000F6185B /* TransformingOperator.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = TransformingOperator.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		E1C0D0CD2945A4CC00F6185B /* CombiningOperators.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = CombiningOperators.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		E1C0D0CE2945BE1400F6185B /* TimeBaseOperators.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = TimeBaseOperators.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		F6C58F36FA361A0592EA2385 /* Pods-RxPlayground.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxPlayground.debug.xcconfig"; path = "Target Support Files/Pods-RxPlayground/Pods-RxPlayground.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -103,6 +104,7 @@
 				E1C0D0CB2945340700F6185B /* FilterOperators.playground */,
 				E1C0D0CC294579A000F6185B /* TransformingOperator.playground */,
 				E1C0D0CD2945A4CC00F6185B /* CombiningOperators.playground */,
+				E1C0D0CE2945BE1400F6185B /* TimeBaseOperators.playground */,
 			);
 			path = Playground;
 			sourceTree = "<group>";
