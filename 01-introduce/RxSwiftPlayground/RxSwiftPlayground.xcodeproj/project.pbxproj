@@ -1,0 +1,727 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AF0F491D29460A4400A53737 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF0F491C29460A4400A53737 /* AppDelegate.swift */; };
+		AF0F491F29460A4400A53737 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF0F491E29460A4400A53737 /* SceneDelegate.swift */; };
+		AF0F492129460A4400A53737 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF0F492029460A4400A53737 /* ViewController.swift */; };
+		AF0F492429460A4400A53737 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF0F492229460A4400A53737 /* Main.storyboard */; };
+		AF0F492629460A4500A53737 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF0F492529460A4500A53737 /* Assets.xcassets */; };
+		AF0F492929460A4500A53737 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF0F492729460A4500A53737 /* LaunchScreen.storyboard */; };
+		E860C2664C7FFE398653FBE7 /* Pods_RxSwiftPlayground.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7A4F5C91F729299DDA22370 /* Pods_RxSwiftPlayground.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3F222D57435326300E3F133E /* Pods-RxSwiftPlayground.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSwiftPlayground.debug.xcconfig"; path = "Target Support Files/Pods-RxSwiftPlayground/Pods-RxSwiftPlayground.debug.xcconfig"; sourceTree = "<group>"; };
+		67524D54220763FF52966EEF /* Pods-RxSwiftPlayground.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSwiftPlayground.release.xcconfig"; path = "Target Support Files/Pods-RxSwiftPlayground/Pods-RxSwiftPlayground.release.xcconfig"; sourceTree = "<group>"; };
+		AF0F491929460A4400A53737 /* RxSwiftPlayground.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RxSwiftPlayground.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF0F491C29460A4400A53737 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AF0F491E29460A4400A53737 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		AF0F492029460A4400A53737 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AF0F492329460A4400A53737 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AF0F492529460A4500A53737 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AF0F492829460A4500A53737 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AF0F492A29460A4500A53737 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AF0F493129460A7500A53737 /* Deferred.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Deferred.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		AF0F493229460A7500A53737 /* FilterOperators.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = FilterOperators.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		AF0F493329460A7500A53737 /* Introduce.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Introduce.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		AF0F493429460A7500A53737 /* Subject.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Subject.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		AF0F493529460A7500A53737 /* TimeBaseOperators.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = TimeBaseOperators.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		AF0F493629460A7500A53737 /* JustOfFrom.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = JustOfFrom.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		AF0F493729460A7500A53737 /* Single.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Single.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		AF0F493829460A7500A53737 /* Empty.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Empty.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		AF0F493929460A7500A53737 /* CombiningOperators.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = CombiningOperators.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		AF0F493A29460A7500A53737 /* TransformingOperator.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = TransformingOperator.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		AF0F493C2946105D00A53737 /* Hello.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Hello.playground; sourceTree = "<group>"; };
+		AF0F493E2946105D00A53737 /* scheduler.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = scheduler.playground; sourceTree = "<group>"; };
+		AF0F49402946105D00A53737 /* catchAndReturn.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = catchAndReturn.playground; sourceTree = "<group>"; };
+		AF0F49412946105D00A53737 /* retry.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = retry.playground; sourceTree = "<group>"; };
+		AF0F49422946105D00A53737 /* catch.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = catch.playground; sourceTree = "<group>"; };
+		AF0F49432946105D00A53737 /* retryWhen.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = retryWhen.playground; sourceTree = "<group>"; };
+		AF0F49452946105E00A53737 /* publish.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = publish.playground; sourceTree = "<group>"; };
+		AF0F49462946105E00A53737 /* share.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = share.playground; sourceTree = "<group>"; };
+		AF0F49472946105E00A53737 /* multicast.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = multicast.playground; sourceTree = "<group>"; };
+		AF0F49482946105E00A53737 /* refCount.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = refCount.playground; sourceTree = "<group>"; };
+		AF0F49492946105E00A53737 /* replay.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = replay.playground; sourceTree = "<group>"; };
+		AF0F494A2946105E00A53737 /* overveiw.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = overveiw.playground; sourceTree = "<group>"; };
+		AF0F494C2946105E00A53737 /* BehaviorSubject.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = BehaviorSubject.playground; sourceTree = "<group>"; };
+		AF0F494D2946105E00A53737 /* PublishSubject.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = PublishSubject.playground; sourceTree = "<group>"; };
+		AF0F494E2946105E00A53737 /* Relay.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Relay.playground; sourceTree = "<group>"; };
+		AF0F494F2946105E00A53737 /* AsyncSubject.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = AsyncSubject.playground; sourceTree = "<group>"; };
+		AF0F49502946105E00A53737 /* ReplaySubject.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = ReplaySubject.playground; sourceTree = "<group>"; };
+		AF0F49522946105F00A53737 /* Observers.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Observers.playground; sourceTree = "<group>"; };
+		AF0F49532946105F00A53737 /* infalliable.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = infalliable.playground; sourceTree = "<group>"; };
+		AF0F49542946105F00A53737 /* Disposables.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Disposables.playground; sourceTree = "<group>"; };
+		AF0F49552946105F00A53737 /* Observables.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Observables.playground; sourceTree = "<group>"; };
+		AF0F49562946105F00A53737 /* Operators.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Operators.playground; sourceTree = "<group>"; };
+		AF0F49592946105F00A53737 /* timeout.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = timeout.playground; sourceTree = "<group>"; };
+		AF0F495A2946105F00A53737 /* interval.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = interval.playground; sourceTree = "<group>"; };
+		AF0F495B2946105F00A53737 /* delaySubscription.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = delaySubscription.playground; sourceTree = "<group>"; };
+		AF0F495C2946105F00A53737 /* timer.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = timer.playground; sourceTree = "<group>"; };
+		AF0F495D2946105F00A53737 /* delay.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = delay.playground; sourceTree = "<group>"; };
+		AF0F495F2946105F00A53737 /* window.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = window.playground; sourceTree = "<group>"; };
+		AF0F49602946105F00A53737 /* map.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = map.playground; sourceTree = "<group>"; };
+		AF0F49612946106000A53737 /* compactMap.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = compactMap.playground; sourceTree = "<group>"; };
+		AF0F49622946106000A53737 /* flatMapFirst.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = flatMapFirst.playground; sourceTree = "<group>"; };
+		AF0F49632946106000A53737 /* concatMap.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = concatMap.playground; sourceTree = "<group>"; };
+		AF0F49642946106000A53737 /* flatMap.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = flatMap.playground; sourceTree = "<group>"; };
+		AF0F49652946106000A53737 /* groupBy.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = groupBy.playground; sourceTree = "<group>"; };
+		AF0F49662946106000A53737 /* buffer.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = buffer.playground; sourceTree = "<group>"; };
+		AF0F49672946106000A53737 /* scan.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = scan.playground; sourceTree = "<group>"; };
+		AF0F49682946106000A53737 /* flatMapLatest.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = flatMapLatest.playground; sourceTree = "<group>"; };
+		AF0F49692946106000A53737 /* toArray.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = toArray.playground; sourceTree = "<group>"; };
+		AF0F496B2946106000A53737 /* deferred.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = deferred.playground; sourceTree = "<group>"; };
+		AF0F496C2946106000A53737 /* error.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = error.playground; sourceTree = "<group>"; };
+		AF0F496D2946106000A53737 /* generate.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = generate.playground; sourceTree = "<group>"; };
+		AF0F496E2946106000A53737 /* of.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = of.playground; sourceTree = "<group>"; };
+		AF0F496F2946106000A53737 /* from.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = from.playground; sourceTree = "<group>"; };
+		AF0F49702946106000A53737 /* range.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = range.playground; sourceTree = "<group>"; };
+		AF0F49712946106000A53737 /* just.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = just.playground; sourceTree = "<group>"; };
+		AF0F49722946106000A53737 /* empty.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = empty.playground; sourceTree = "<group>"; };
+		AF0F49732946106000A53737 /* create.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = create.playground; sourceTree = "<group>"; };
+		AF0F49742946106000A53737 /* repeatElement.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = repeatElement.playground; sourceTree = "<group>"; };
+		AF0F49762946106000A53737 /* amb.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = amb.playground; sourceTree = "<group>"; };
+		AF0F49782946106000A53737 /* sample.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = sample.playground; sourceTree = "<group>"; };
+		AF0F49792946106000A53737 /* withLatestFrom.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = withLatestFrom.playground; sourceTree = "<group>"; };
+		AF0F497A2946106000A53737 /* zip.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = zip.playground; sourceTree = "<group>"; };
+		AF0F497B2946106000A53737 /* startWith.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = startWith.playground; sourceTree = "<group>"; };
+		AF0F497C2946106000A53737 /* switchLatest.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = switchLatest.playground; sourceTree = "<group>"; };
+		AF0F497D2946106000A53737 /* concat.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = concat.playground; sourceTree = "<group>"; };
+		AF0F497E2946106000A53737 /* combineLatest.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = combineLatest.playground; sourceTree = "<group>"; };
+		AF0F497F2946106000A53737 /* reduce.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = reduce.playground; sourceTree = "<group>"; };
+		AF0F49802946106000A53737 /* merge.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = merge.playground; sourceTree = "<group>"; };
+		AF0F49822946106000A53737 /* sampleLatest.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = sampleLatest.playground; sourceTree = "<group>"; };
+		AF0F49832946106000A53737 /* sample.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = sample.playground; sourceTree = "<group>"; };
+		AF0F49842946106000A53737 /* skipUntil.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = skipUntil.playground; sourceTree = "<group>"; };
+		AF0F49852946106000A53737 /* throttle.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = throttle.playground; sourceTree = "<group>"; };
+		AF0F49862946106000A53737 /* takeFor.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = takeFor.playground; sourceTree = "<group>"; };
+		AF0F49872946106000A53737 /* takeWhile.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = takeWhile.playground; sourceTree = "<group>"; };
+		AF0F49882946106100A53737 /* distinctUntilChanged.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = distinctUntilChanged.playground; sourceTree = "<group>"; };
+		AF0F49892946106100A53737 /* takeLast.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = takeLast.playground; sourceTree = "<group>"; };
+		AF0F498A2946106100A53737 /* elementAt.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = elementAt.playground; sourceTree = "<group>"; };
+		AF0F498B2946106100A53737 /* ignoreElements.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = ignoreElements.playground; sourceTree = "<group>"; };
+		AF0F498C2946106100A53737 /* take.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = take.playground; sourceTree = "<group>"; };
+		AF0F498D2946106100A53737 /* single.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = single.playground; sourceTree = "<group>"; };
+		AF0F498E2946106100A53737 /* takeUntil.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = takeUntil.playground; sourceTree = "<group>"; };
+		AF0F498F2946106100A53737 /* filter.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = filter.playground; sourceTree = "<group>"; };
+		AF0F49902946106100A53737 /* skipWhile.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = skipWhile.playground; sourceTree = "<group>"; };
+		AF0F49912946106100A53737 /* debounce.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = debounce.playground; sourceTree = "<group>"; };
+		AF0F49922946106100A53737 /* skipDuration.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = skipDuration.playground; sourceTree = "<group>"; };
+		AF0F49932946106100A53737 /* skip.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = skip.playground; sourceTree = "<group>"; };
+		F7A4F5C91F729299DDA22370 /* Pods_RxSwiftPlayground.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxSwiftPlayground.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AF0F491629460A4400A53737 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E860C2664C7FFE398653FBE7 /* Pods_RxSwiftPlayground.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4D2AE8A311834047DD2BE45B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3F222D57435326300E3F133E /* Pods-RxSwiftPlayground.debug.xcconfig */,
+				67524D54220763FF52966EEF /* Pods-RxSwiftPlayground.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		A355F863B943F4C2DAD13C50 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F7A4F5C91F729299DDA22370 /* Pods_RxSwiftPlayground.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AF0F491029460A4400A53737 = {
+			isa = PBXGroup;
+			children = (
+				AF0F491B29460A4400A53737 /* RxSwiftPlayground */,
+				AF0F491A29460A4400A53737 /* Products */,
+				4D2AE8A311834047DD2BE45B /* Pods */,
+				A355F863B943F4C2DAD13C50 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		AF0F491A29460A4400A53737 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AF0F491929460A4400A53737 /* RxSwiftPlayground.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AF0F491B29460A4400A53737 /* RxSwiftPlayground */ = {
+			isa = PBXGroup;
+			children = (
+				AF0F493029460A7500A53737 /* Playground */,
+				AF0F491C29460A4400A53737 /* AppDelegate.swift */,
+				AF0F491E29460A4400A53737 /* SceneDelegate.swift */,
+				AF0F492029460A4400A53737 /* ViewController.swift */,
+				AF0F492229460A4400A53737 /* Main.storyboard */,
+				AF0F492529460A4500A53737 /* Assets.xcassets */,
+				AF0F492729460A4500A53737 /* LaunchScreen.storyboard */,
+				AF0F492A29460A4500A53737 /* Info.plist */,
+			);
+			path = RxSwiftPlayground;
+			sourceTree = "<group>";
+		};
+		AF0F493029460A7500A53737 /* Playground */ = {
+			isa = PBXGroup;
+			children = (
+				AF0F493F2946105D00A53737 /* ErrorHandling */,
+				AF0F493B2946105D00A53737 /* Hello */,
+				AF0F49512946105F00A53737 /* KeyConcepts */,
+				AF0F49572946105F00A53737 /* Operators */,
+				AF0F493D2946105D00A53737 /* Schedulers */,
+				AF0F49442946105E00A53737 /* SharingSubscription */,
+				AF0F494B2946105E00A53737 /* Subjects */,
+				AF0F49942946106800A53737 /* Others */,
+			);
+			path = Playground;
+			sourceTree = "<group>";
+		};
+		AF0F493B2946105D00A53737 /* Hello */ = {
+			isa = PBXGroup;
+			children = (
+				AF0F493C2946105D00A53737 /* Hello.playground */,
+			);
+			path = Hello;
+			sourceTree = "<group>";
+		};
+		AF0F493D2946105D00A53737 /* Schedulers */ = {
+			isa = PBXGroup;
+			children = (
+				AF0F493E2946105D00A53737 /* scheduler.playground */,
+			);
+			path = Schedulers;
+			sourceTree = "<group>";
+		};
+		AF0F493F2946105D00A53737 /* ErrorHandling */ = {
+			isa = PBXGroup;
+			children = (
+				AF0F49402946105D00A53737 /* catchAndReturn.playground */,
+				AF0F49412946105D00A53737 /* retry.playground */,
+				AF0F49422946105D00A53737 /* catch.playground */,
+				AF0F49432946105D00A53737 /* retryWhen.playground */,
+			);
+			path = ErrorHandling;
+			sourceTree = "<group>";
+		};
+		AF0F49442946105E00A53737 /* SharingSubscription */ = {
+			isa = PBXGroup;
+			children = (
+				AF0F49452946105E00A53737 /* publish.playground */,
+				AF0F49462946105E00A53737 /* share.playground */,
+				AF0F49472946105E00A53737 /* multicast.playground */,
+				AF0F49482946105E00A53737 /* refCount.playground */,
+				AF0F49492946105E00A53737 /* replay.playground */,
+				AF0F494A2946105E00A53737 /* overveiw.playground */,
+			);
+			path = SharingSubscription;
+			sourceTree = "<group>";
+		};
+		AF0F494B2946105E00A53737 /* Subjects */ = {
+			isa = PBXGroup;
+			children = (
+				AF0F494C2946105E00A53737 /* BehaviorSubject.playground */,
+				AF0F494D2946105E00A53737 /* PublishSubject.playground */,
+				AF0F494E2946105E00A53737 /* Relay.playground */,
+				AF0F494F2946105E00A53737 /* AsyncSubject.playground */,
+				AF0F49502946105E00A53737 /* ReplaySubject.playground */,
+			);
+			path = Subjects;
+			sourceTree = "<group>";
+		};
+		AF0F49512946105F00A53737 /* KeyConcepts */ = {
+			isa = PBXGroup;
+			children = (
+				AF0F49522946105F00A53737 /* Observers.playground */,
+				AF0F49532946105F00A53737 /* infalliable.playground */,
+				AF0F49542946105F00A53737 /* Disposables.playground */,
+				AF0F49552946105F00A53737 /* Observables.playground */,
+				AF0F49562946105F00A53737 /* Operators.playground */,
+			);
+			path = KeyConcepts;
+			sourceTree = "<group>";
+		};
+		AF0F49572946105F00A53737 /* Operators */ = {
+			isa = PBXGroup;
+			children = (
+				AF0F49582946105F00A53737 /* TimeBasedOperators */,
+				AF0F495E2946105F00A53737 /* TransformingOperators */,
+				AF0F496A2946106000A53737 /* CreatingOperators */,
+				AF0F49752946106000A53737 /* ConditionalOperators */,
+				AF0F49772946106000A53737 /* CombiningOperators */,
+				AF0F49812946106000A53737 /* FilteringOperators */,
+			);
+			path = Operators;
+			sourceTree = "<group>";
+		};
+		AF0F49582946105F00A53737 /* TimeBasedOperators */ = {
+			isa = PBXGroup;
+			children = (
+				AF0F49592946105F00A53737 /* timeout.playground */,
+				AF0F495A2946105F00A53737 /* interval.playground */,
+				AF0F495B2946105F00A53737 /* delaySubscription.playground */,
+				AF0F495C2946105F00A53737 /* timer.playground */,
+				AF0F495D2946105F00A53737 /* delay.playground */,
+			);
+			path = TimeBasedOperators;
+			sourceTree = "<group>";
+		};
+		AF0F495E2946105F00A53737 /* TransformingOperators */ = {
+			isa = PBXGroup;
+			children = (
+				AF0F495F2946105F00A53737 /* window.playground */,
+				AF0F49602946105F00A53737 /* map.playground */,
+				AF0F49612946106000A53737 /* compactMap.playground */,
+				AF0F49622946106000A53737 /* flatMapFirst.playground */,
+				AF0F49632946106000A53737 /* concatMap.playground */,
+				AF0F49642946106000A53737 /* flatMap.playground */,
+				AF0F49652946106000A53737 /* groupBy.playground */,
+				AF0F49662946106000A53737 /* buffer.playground */,
+				AF0F49672946106000A53737 /* scan.playground */,
+				AF0F49682946106000A53737 /* flatMapLatest.playground */,
+				AF0F49692946106000A53737 /* toArray.playground */,
+			);
+			path = TransformingOperators;
+			sourceTree = "<group>";
+		};
+		AF0F496A2946106000A53737 /* CreatingOperators */ = {
+			isa = PBXGroup;
+			children = (
+				AF0F496B2946106000A53737 /* deferred.playground */,
+				AF0F496C2946106000A53737 /* error.playground */,
+				AF0F496D2946106000A53737 /* generate.playground */,
+				AF0F496E2946106000A53737 /* of.playground */,
+				AF0F496F2946106000A53737 /* from.playground */,
+				AF0F49702946106000A53737 /* range.playground */,
+				AF0F49712946106000A53737 /* just.playground */,
+				AF0F49722946106000A53737 /* empty.playground */,
+				AF0F49732946106000A53737 /* create.playground */,
+				AF0F49742946106000A53737 /* repeatElement.playground */,
+			);
+			path = CreatingOperators;
+			sourceTree = "<group>";
+		};
+		AF0F49752946106000A53737 /* ConditionalOperators */ = {
+			isa = PBXGroup;
+			children = (
+				AF0F49762946106000A53737 /* amb.playground */,
+			);
+			path = ConditionalOperators;
+			sourceTree = "<group>";
+		};
+		AF0F49772946106000A53737 /* CombiningOperators */ = {
+			isa = PBXGroup;
+			children = (
+				AF0F49782946106000A53737 /* sample.playground */,
+				AF0F49792946106000A53737 /* withLatestFrom.playground */,
+				AF0F497A2946106000A53737 /* zip.playground */,
+				AF0F497B2946106000A53737 /* startWith.playground */,
+				AF0F497C2946106000A53737 /* switchLatest.playground */,
+				AF0F497D2946106000A53737 /* concat.playground */,
+				AF0F497E2946106000A53737 /* combineLatest.playground */,
+				AF0F497F2946106000A53737 /* reduce.playground */,
+				AF0F49802946106000A53737 /* merge.playground */,
+			);
+			path = CombiningOperators;
+			sourceTree = "<group>";
+		};
+		AF0F49812946106000A53737 /* FilteringOperators */ = {
+			isa = PBXGroup;
+			children = (
+				AF0F49822946106000A53737 /* sampleLatest.playground */,
+				AF0F49832946106000A53737 /* sample.playground */,
+				AF0F49842946106000A53737 /* skipUntil.playground */,
+				AF0F49852946106000A53737 /* throttle.playground */,
+				AF0F49862946106000A53737 /* takeFor.playground */,
+				AF0F49872946106000A53737 /* takeWhile.playground */,
+				AF0F49882946106100A53737 /* distinctUntilChanged.playground */,
+				AF0F49892946106100A53737 /* takeLast.playground */,
+				AF0F498A2946106100A53737 /* elementAt.playground */,
+				AF0F498B2946106100A53737 /* ignoreElements.playground */,
+				AF0F498C2946106100A53737 /* take.playground */,
+				AF0F498D2946106100A53737 /* single.playground */,
+				AF0F498E2946106100A53737 /* takeUntil.playground */,
+				AF0F498F2946106100A53737 /* filter.playground */,
+				AF0F49902946106100A53737 /* skipWhile.playground */,
+				AF0F49912946106100A53737 /* debounce.playground */,
+				AF0F49922946106100A53737 /* skipDuration.playground */,
+				AF0F49932946106100A53737 /* skip.playground */,
+			);
+			path = FilteringOperators;
+			sourceTree = "<group>";
+		};
+		AF0F49942946106800A53737 /* Others */ = {
+			isa = PBXGroup;
+			children = (
+				AF0F493629460A7500A53737 /* JustOfFrom.playground */,
+				AF0F493129460A7500A53737 /* Deferred.playground */,
+				AF0F493229460A7500A53737 /* FilterOperators.playground */,
+				AF0F493329460A7500A53737 /* Introduce.playground */,
+				AF0F493429460A7500A53737 /* Subject.playground */,
+				AF0F493529460A7500A53737 /* TimeBaseOperators.playground */,
+				AF0F493729460A7500A53737 /* Single.playground */,
+				AF0F493829460A7500A53737 /* Empty.playground */,
+				AF0F493929460A7500A53737 /* CombiningOperators.playground */,
+				AF0F493A29460A7500A53737 /* TransformingOperator.playground */,
+			);
+			path = Others;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AF0F491829460A4400A53737 /* RxSwiftPlayground */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AF0F492D29460A4500A53737 /* Build configuration list for PBXNativeTarget "RxSwiftPlayground" */;
+			buildPhases = (
+				0C1EFAA9327B90C0D42C9ECC /* [CP] Check Pods Manifest.lock */,
+				AF0F491529460A4400A53737 /* Sources */,
+				AF0F491629460A4400A53737 /* Frameworks */,
+				AF0F491729460A4400A53737 /* Resources */,
+				75912F1A33CB8C83126E41EE /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RxSwiftPlayground;
+			productName = RxSwiftPlayground;
+			productReference = AF0F491929460A4400A53737 /* RxSwiftPlayground.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AF0F491129460A4400A53737 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					AF0F491829460A4400A53737 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+				};
+			};
+			buildConfigurationList = AF0F491429460A4400A53737 /* Build configuration list for PBXProject "RxSwiftPlayground" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AF0F491029460A4400A53737;
+			productRefGroup = AF0F491A29460A4400A53737 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AF0F491829460A4400A53737 /* RxSwiftPlayground */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AF0F491729460A4400A53737 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF0F492929460A4500A53737 /* LaunchScreen.storyboard in Resources */,
+				AF0F492629460A4500A53737 /* Assets.xcassets in Resources */,
+				AF0F492429460A4400A53737 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0C1EFAA9327B90C0D42C9ECC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RxSwiftPlayground-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		75912F1A33CB8C83126E41EE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RxSwiftPlayground/Pods-RxSwiftPlayground-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RxSwiftPlayground/Pods-RxSwiftPlayground-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RxSwiftPlayground/Pods-RxSwiftPlayground-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AF0F491529460A4400A53737 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF0F492129460A4400A53737 /* ViewController.swift in Sources */,
+				AF0F491D29460A4400A53737 /* AppDelegate.swift in Sources */,
+				AF0F491F29460A4400A53737 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		AF0F492229460A4400A53737 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AF0F492329460A4400A53737 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		AF0F492729460A4500A53737 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AF0F492829460A4500A53737 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AF0F492B29460A4500A53737 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AF0F492C29460A4500A53737 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AF0F492E29460A4500A53737 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3F222D57435326300E3F133E /* Pods-RxSwiftPlayground.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = EB6VZUW8R7;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = RxSwiftPlayground/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.eflash.demo.RxSwiftPlayground;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AF0F492F29460A4500A53737 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 67524D54220763FF52966EEF /* Pods-RxSwiftPlayground.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = EB6VZUW8R7;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = RxSwiftPlayground/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.eflash.demo.RxSwiftPlayground;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AF0F491429460A4400A53737 /* Build configuration list for PBXProject "RxSwiftPlayground" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AF0F492B29460A4500A53737 /* Debug */,
+				AF0F492C29460A4500A53737 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AF0F492D29460A4500A53737 /* Build configuration list for PBXNativeTarget "RxSwiftPlayground" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AF0F492E29460A4500A53737 /* Debug */,
+				AF0F492F29460A4500A53737 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AF0F491129460A4400A53737 /* Project object */;
+}
