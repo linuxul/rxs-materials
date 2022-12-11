@@ -53,6 +53,3 @@ Observable<Int>.timer(.seconds(2), period: .seconds(5), scheduler: MainScheduler
     .disposed(by: bag)
 
 
-
-
-
