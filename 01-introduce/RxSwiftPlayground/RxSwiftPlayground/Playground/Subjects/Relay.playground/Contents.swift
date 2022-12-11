@@ -11,36 +11,38 @@ import RxCocoa
 
 let disposeBag = DisposeBag()
 
-let prelay = PublishRelay<Int>()
+example(of: "Relay #1") {
+    let prelay = PublishRelay<Int>()
 
-prelay.subscribe { print("publishRelay : \($0)") }
-.disposed(by: disposeBag)
+    prelay.subscribe { print("publishRelay : \($0)") }
+    .disposed(by: disposeBag)
 
-prelay.accept(1)
-prelay.accept(2)
+    prelay.accept(1)
+    prelay.accept(2)
 
-let brelay = BehaviorRelay<Int>(value: 2)
-brelay.accept(3)
+    let brelay = BehaviorRelay<Int>(value: 2)
+    brelay.accept(3)
 
-brelay.subscribe {
-    print("behaviorRelay : \($0)")
-}.disposed(by: disposeBag)
+    brelay.subscribe {
+        print("behaviorRelay : \($0)")
+    }.disposed(by: disposeBag)
 
-brelay.accept(4)
-
-
-print(brelay.value)
+    brelay.accept(4)
 
 
-let rreplay = ReplayRelay<Int>.create(bufferSize: 3)
-(1...10).forEach {
-    rreplay.accept($0)
+    print(brelay.value)
+
+
+    let rreplay = ReplayRelay<Int>.create(bufferSize: 3)
+    (1...10).forEach {
+        rreplay.accept($0)
+    }
+
+    rreplay.subscribe {
+        print("replayRelay : \($0)")
+    }
+    .disposed(by: disposeBag)
+
+
 }
-
-rreplay.subscribe {
-    print("replayRelay : \($0)")
-}
-.disposed(by: disposeBag)
-
-
 

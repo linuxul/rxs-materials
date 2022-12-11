@@ -6,6 +6,7 @@ enum MyError: Error {
     case unknown
 }
 
+example(of: "disposables #1") {
 let observable = Observable<String>.create { observer in
     observer.onNext("Hello")
     observer.onNext("Observable")
@@ -31,5 +32,5 @@ observable.subscribe {
 infallible.subscribe {
     print($0)
 }
-
+}
 

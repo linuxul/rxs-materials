@@ -5,38 +5,42 @@ import RxSwift
 /*:
  # PublishSubject
  */
+
+
 //subscribe한 시점 이후에 발생되는 이벤트만 전달받는다.
 
 
 let disposeBag = DisposeBag()
 
 enum MyError: Error {
-   case error
+    case error
 }
 
-let subject = PublishSubject<String>()
+example(of: "disposables #1") {
 
-// subject는 생성자를 받지 않는다.
-// subject는 observable, observer
+    let subject = PublishSubject<String>()
 
-subject.onNext("Hello")
+    // subject는 생성자를 받지 않는다.
+    // subject는 observable, observer
 
-let o1 = subject.subscribe { print(">> 1", $0) }
-o1.disposed(by: disposeBag)
+    subject.onNext("Hello")
 
-subject.onNext("RxSwift")
+    let o1 = subject.subscribe { print(">> 1", $0) }
+    o1.disposed(by: disposeBag)
 
-let o2 = subject.subscribe { print(">> 2", $0) }
-o2.disposed(by: disposeBag)
+    subject.onNext("RxSwift")
 
-subject.onNext("Subject")
-//subject.onCompleted()
-subject.onError(MyError.error)
+    let o2 = subject.subscribe { print(">> 2", $0) }
+    o2.disposed(by: disposeBag)
 
-let o3 = subject.subscribe { print(">> 3", $0) }
-o3.disposed(by: disposeBag)
+    subject.onNext("Subject")
+    //subject.onCompleted()
+    subject.onError(MyError.error)
 
+    let o3 = subject.subscribe { print(">> 3", $0) }
+    o3.disposed(by: disposeBag)
 
+}
 
 
 

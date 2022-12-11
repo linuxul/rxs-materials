@@ -9,22 +9,23 @@ import RxSwift
 let bag = DisposeBag()
 
 enum MyError: Error {
-   case error
+    case error
 }
 
-let as0 = AsyncSubject<Int>()
+example(of: "AsyncSubject #1") {
+    let as0 = AsyncSubject<Int>()
 
-as0
-    .subscribe { print(" >>", $0) }
-    .disposed(by: bag)
+    as0
+        .subscribe { print(" >>", $0) }
+        .disposed(by: bag)
 
-as0.onNext(1)
+    as0.onNext(1)
 
-as0.onNext(2)
-as0.onNext(3)
+    as0.onNext(2)
+    as0.onNext(3)
+    
+    as0.onCompleted()
 
-as0.onCompleted()
-
-//as0.onError(MyError.error)
-
+    //as0.onError(MyError.error)
+}
 
