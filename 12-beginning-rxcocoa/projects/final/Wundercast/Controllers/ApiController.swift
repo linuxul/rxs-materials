@@ -103,7 +103,7 @@ class ApiController {
     private let apiKey = "ccda83b2e8d0fdf5ee7e7f943fca111f"
 
     /// API base URL
-    let baseURL = URL(string: "http://api.openweathermap.org/data/3.0")!
+    let baseURL = URL(string: "http://api.openweathermap.org/data/2.5")!
 
     init() {
         //    Logging.URLRequests = { request in
